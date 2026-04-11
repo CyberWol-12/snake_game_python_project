@@ -15,7 +15,7 @@ class Snake:
 
     def create_snake(self):    
         for position in STARTING_POSITIONS:
-            self.add_segment()
+            self.add_segment(position)
 
             
 
@@ -27,7 +27,7 @@ class Snake:
             self.segment.append(new_segment)
 
     def extend(self):
-        self.add_segment(self.add_segment[-1].position())#Snake ke last part ki jagah pe ek naya part add krna from last
+        self.add_segment(self.segment[-1].position())#Snake ke last part ki jagah pe ek naya part add krna from last
 
 
     def move(self):
