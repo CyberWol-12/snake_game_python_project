@@ -33,7 +33,7 @@ class Snake:
             self.head.setheading(UP)  
 
     def down(self):
-        if self.headf.heading() != UP:
+        if self.head.heading() != UP:
            self.head.setheading(DOWN)  
 
     def left(self):
