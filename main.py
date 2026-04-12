@@ -39,13 +39,14 @@ while game_is_on:
     # Detech collision with wall
     if snake.head.xcor() >280 or snake.head.xcor() < -280 or snake.head.ycor() >280 or snake.head.xcor()< -280:
         scoreboard.reset()
+        snake.reset()
         
 
 
     for segment in snake.segment[1:]:
         if snake.head.distance(segment) < 10:
             scoreboard.reset()
-            
+            snake.reset()
          
          
 
